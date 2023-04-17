@@ -16,7 +16,7 @@ const { NotImplementedError } = require('../extensions/index.js');
 
 function createDreamTeam(members) {
 
-  if(!Array.isArray(members)) {
+  if (!Array.isArray(members)) {
     return false;
   }
 
@@ -28,7 +28,6 @@ function createDreamTeam(members) {
       res.push(member[0].toUpperCase());
     }
   }
-
   return res.sort().join('');
 }
 
